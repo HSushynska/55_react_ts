@@ -1,0 +1,11 @@
+.main-input {
+    width: 300px;
+    height: fit-content;
+    padding: 20px;
+    background: lemonchiffon;
+    border: none;
+    border-radius: 6px;
+    font-size: 26px;
+    color: black;
+    
+  }
