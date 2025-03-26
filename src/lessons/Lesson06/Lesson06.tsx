@@ -1,14 +1,13 @@
-//пример импорта по умолчанию (нужно использовать точное название и заключать его 
-//в фигурные скобки)
-
 import Button from "../../components/Button/Button";
-import { getAction, TRAFFIC_LIGHT } from "../object_type";
+//пример именованного импорта (нужно использовать точное название и заключать его 
+//в фигурные скобки)
+import { getAction, TRAFFIC_LIGHT } from "./object_type";
 
 function Lesson06() {
   console.log(getAction(TRAFFIC_LIGHT.GREEN));
   
 
-  return <Button />
+  return <Button name='Send'/>
 }
 
 //Экспорт по умолчанию для компонента Lesson06
