@@ -2,7 +2,7 @@ import './styles.css'
 
 function Input() {
     return ( 
-    <input className="main-input" type="text" placeholder="placeholder" name="name" />
+    <input className="main-input" name="name" placeholder="placeholder"  />
 )
   }
   
