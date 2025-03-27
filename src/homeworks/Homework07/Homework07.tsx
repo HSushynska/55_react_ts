@@ -1,12 +1,13 @@
 import { v4 } from "uuid";
 
-import Product from "../../components/Product/Product";
+import ProductCard from "../../components/Product/Product";
 import { products } from "./data";
 import './styles.css'
+import { Product } from "./types";
 
 function Homework07() {
-  const productArray = products.map((item) => {
-    return <Product
+  const productArray = products.map((item: Product) => {
+    return <ProductCard
       key={v4()}
       name={item.name}
       price={item.price} />
@@ -14,8 +15,10 @@ function Homework07() {
 
 return (
     <div className='cards-wrapper'>
+      <h1>Products</h1>
       {productArray}
     </div>
+    
   )
 }
 

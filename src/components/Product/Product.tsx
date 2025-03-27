@@ -4,8 +4,10 @@ import './styles.css';
 function Product({name, price}: ProductProps) {
   return (
     <div className="product-card-container">
-      {name}: {price} euro
+       <div>Product: {name}</div>
+      <div>Price: {price}</div>
     </div>
+    
   )
 }
 
