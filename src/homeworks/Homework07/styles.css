@@ -1,0 +1,9 @@
+.cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    gap: 20px;
+    background-color: rgb(226, 242, 237);
+    padding: 20px;
+  }
