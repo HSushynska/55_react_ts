@@ -1,21 +1,18 @@
-import { BoxInfo, TitleCard } from './styles'
-import './styles.css'
+import { Homework09Container, ProfileCard, Title, Description } from "./styles";
 
-function Homework09 () {
-
+function Homework09() {
   return (
-    <div  className="homework09-container">
-     <BoxInfo primary>
-       <TitleCard>VIP Пользователь</TitleCard>
-         <p> Доступ к эксклюзивным функциям, персональный менеджер и приоритетная поддержка.</p>
-     </BoxInfo>
-     <BoxInfo>
-       <TitleCard> Обычный Пользователь</TitleCard>
-         <p>Стандартный доступ, базовые функции и поддержка в порядке очереди.</p>
-      </BoxInfo>
-    
-    </div>
+    <Homework09Container>
+      <ProfileCard vip>
+        <Title>VIP Пользователь</Title>
+        <Description>Доступ к эксклюзивным функциям, персональный менеджер и приоритетная поддержка.</Description>
+      </ProfileCard>
+      <ProfileCard>
+        <Title>Обычный Пользователь</Title>
+        <Description>Стандартный доступ, базовые функции и поддержка в порядке очереди.</Description>
+      </ProfileCard>
+    </Homework09Container>
   )
 }
 
-export default Homework09 
+export default Homework09;
