@@ -9,7 +9,8 @@ function Input({
   onChange,
   label,
   id,
-  search
+  search,
+  onClick
 }: InputProps) {
   return (
     <InputContainer>
@@ -22,6 +23,7 @@ function Input({
         type={type}
         id={id}
         isSearch = {search}
+        onClick={onClick}
       />
     </InputContainer>
   )
