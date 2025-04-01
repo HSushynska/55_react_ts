@@ -6,7 +6,7 @@ function Homework10() {
     return (<Homework10Container>
         <Button name="SEND" />
         <Button name="DELETE" danger ={true} />
-    
+        
         </Homework10Container>
     )
 }
