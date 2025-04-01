@@ -1,6 +1,6 @@
 
 import Button from "../../components/Button/Button";
-import {Homework10Container, MainButton} from "./styles";
+import {Homework10Container} from "./styles";
 
 function Homework10() {
     return (<Homework10Container>
