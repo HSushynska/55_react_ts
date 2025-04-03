@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
-import backImage from '../../assets/cat.jpg';
 
-export const Homework12Container = styled.div`
+export const Lesson13Container = styled.div`
 
   display: flex;
   flex-direction: column;
@@ -10,12 +9,9 @@ export const Homework12Container = styled.div`
   flex: 1;
   padding: 60px;
   background-color: rgb(241, 231, 83);
-  background-image: url(${backImage});
-  background-position: center;
-  background-size: cover;
 `;
 
-export const FactWrapper = styled.div`
+export const ImageWrapper = styled.div`
  display: flex;
  flex-direction: column;
  align-items: center;
