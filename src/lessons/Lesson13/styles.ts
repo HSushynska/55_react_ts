@@ -30,3 +30,7 @@ export const Error = styled.div`
  color: red;
  font-weight: bold;
 `
+export const Img = styled.img`
+width: 700px;
+height: 400px;
+`

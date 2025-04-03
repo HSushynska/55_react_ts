@@ -1,7 +1,7 @@
 import axios from "axios";
 import { ChangeEvent, useEffect, useState } from "react";
 
-import { ImageWrapper, Lesson13Container, Error } from "./styles";
+import { ImageWrapper, Lesson13Container, Error, Img} from "./styles";
 import Button from "../../components/Button/Button";
 import Spinner from "../../components/Spinner/Spinner";
 import Input from "../../components/Input/Input";
@@ -49,7 +49,7 @@ function Lesson13(){
         value={note}
         onChange={onChangeNote}
          />
-        <ImageWrapper>{isLoading ? <Spinner /> : <img src = {image} />}</ImageWrapper>
+        <ImageWrapper>{isLoading ? <Spinner /> : <Img src = {image} />}</ImageWrapper>
            <Error>{errorMessage}</Error>
         </Lesson13Container>
         )
