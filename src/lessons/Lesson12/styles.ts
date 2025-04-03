@@ -11,22 +11,22 @@ export const Lesson12Container = styled.div`
 `;
 
 export const JokeWrapper = styled.div`
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- min-width: 500px;
- min-height: 400px;
- padding: 30px;
- background-color: white;
- border-radius: 10px;
- font-size: 24px;
- color:rgb(66, 113, 20);
- font-weight: bold;
-`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 500px;
+  min-height: 400px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 24px;
+  color: rgb(66, 113, 20);
+  font-weight: bold;
+`;
 
 export const Error = styled.div`
- font-size: 28px;
- color: red;
- font-weight: bold;
-`
+  font-size: 28px;
+  color: red;
+  font-weight: bold;
+`;
