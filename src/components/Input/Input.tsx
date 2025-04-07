@@ -1,4 +1,4 @@
-import { InputContainer, Label, InputComponent } from './styles';
+import { InputContainer, Label, InputComponent, ErrorMessage } from './styles';
 import { InputProps } from './types';
 
 function Input({
@@ -10,7 +10,7 @@ function Input({
   label,
   id,
   search,
-  
+  error
 }: InputProps) {
   return (
     <InputContainer>
@@ -23,8 +23,8 @@ function Input({
         type={type}
         id={id}
         isSearch = {search}
-        
       />
+      <ErrorMessage>{error}</ErrorMessage>
     </InputContainer>
   )
 }

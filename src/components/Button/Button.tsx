@@ -15,7 +15,7 @@ function Button({ name, onClick, disabled = false, type = 'submit', danger }: Bu
       onClick={onClick}
       disabled={disabled}
       type={type}
-      danger = {danger}
+      danger={danger}
     >
       {name}
     </ButtonComponent>
