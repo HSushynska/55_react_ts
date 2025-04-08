@@ -1,4 +1,5 @@
-export interface Homework15Values {
-  code: string;
-  agreement: boolean;
+export interface ValidationFormValues {
+  code: string,
+  privacy: boolean,
 }
+
