@@ -22,7 +22,7 @@ function Homework15() {
       .test(
         "min length",
         "Мin 6 символа",
-        (value) => String(value).length >= 6
+        (value) => String(value).length === 6
       ),
   });
 
