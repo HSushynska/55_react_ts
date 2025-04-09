@@ -1,18 +1,16 @@
-import { CourseItem, CourseList, CourseTitle, CourseWrapper, Title } from "./styles";
+import {CourseWrapper, ListItem, Title,  } from "./styles";
+import { LessonsData } from "./data";
+import { v4 } from "uuid";
 
 function Course() {
+const lessons = LessonsData.map((lesson: string)=> {
+  return <ListItem key={v4()}>{lesson}</ListItem>
+})
+
   return (
     <CourseWrapper>
       <Title>React Lessons</Title>
-      <CourseTitle>You will learn</CourseTitle>
-      <CourseList>
-        <CourseItem>How to create and nest components</CourseItem>
-        <CourseItem>How to add markup and styles</CourseItem>
-        <CourseItem>How to display data</CourseItem>
-        <CourseItem>How to render conditions and lists</CourseItem>
-        <CourseItem>How to respond to events and update the screen</CourseItem>
-        <CourseItem>How to share data between components</CourseItem>
-      </CourseList>
+      {lessons}
     </CourseWrapper>
   )
 }

@@ -5,21 +5,22 @@ export const CourseWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 16px;
   flex: 1;
   padding: 60px;
-  background-color: rgb(204, 241, 192);
+  background-color: rgb(231, 192, 241);
 `
 
 export const Title = styled.div`
  font-size: 40px;
  font-weight: bold;
- color: #107032
+ color: #701045;
 `
 
-export const CourseList = styled.ul`
-list-style-type: none;
-padding: 0;
-margin: 0;
+export const ListItem = styled.div`
+ font-size: 28px;
+ font-weight: bold;
+ color: #b9548b;
 `
 
 export const CourseItem = styled.li`
