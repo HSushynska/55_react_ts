@@ -15,3 +15,4 @@ export const Title = styled.div`
  font-weight: bold;
  color: #3b2c9a
 `
+

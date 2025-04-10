@@ -1,4 +1,4 @@
-export const LessonsData : string[] = [ 
+export const lessonsData: string[] = [
     'Type Script',
     'Export/import',
     'Control components, children',
@@ -7,4 +7,5 @@ export const LessonsData : string[] = [
     'axios',
     'Formik, Yup',
     'Routing'
-]
+  ]
+  

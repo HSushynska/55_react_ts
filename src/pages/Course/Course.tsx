@@ -1,9 +1,10 @@
-import {CourseWrapper, ListItem, Title,  } from "./styles";
-import { LessonsData } from "./data";
-import { v4 } from "uuid";
+import { v4 } from "uuid"
 
-function Course() {
-const lessons = LessonsData.map((lesson: string)=> {
+import { CourseWrapper, Title, ListItem } from "./styles"
+import { lessonsData } from "./data"
+
+function Course (){
+const lessons = lessonsData.map((lesson: string)=>{
   return <ListItem key={v4()}>{lesson}</ListItem>
 })
 
@@ -15,4 +16,5 @@ const lessons = LessonsData.map((lesson: string)=> {
   )
 }
 
-export default Course;
+export default Course
+
