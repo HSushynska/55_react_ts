@@ -9,6 +9,10 @@ import GlobalStyles from "./styles/GlobalStyles"
 import Designer from './pages/Users/components/Designer/Designer'
 import Manager from './pages/Users/components/Manager/Manager'
 import PageNotFound from './pages/PageNotFound/PageNotFound'
+import Clients from './pages/Clients/Clients'
+import Züblin from './pages/Clients/components/Züblin/Züblin'
+import Hochtief from './pages/Clients/components/Hochtief/Hochtief'
+import Strabag from './pages/Clients/components/Strabag/Strabag'
 
 //Lessons imports
 // импорт компонента Lesson06 по умолчанию
@@ -64,6 +68,10 @@ function App() {
           том случае, если в маршрутах выше не будет найдено того маршрута,
           к которому обращается пользователь */}
           <Route path='*' element={<PageNotFound />} />
+          <Route path='/clients' element={<Clients />} />
+          <Route path='/clients/hochtief' element={<Hochtief />} />
+          <Route path='/clients/strabag' element={<Strabag />} />
+          <Route path='/clients/züblin' element={<Züblin />} />
         </Routes>
       </Layout>
     </BrowserRouter>
