@@ -13,6 +13,7 @@ import Clients from './pages/Clients/Clients'
 import Züblin from './pages/Clients/components/Züblin/Züblin'
 import Hochtief from './pages/Clients/components/Hochtief/Hochtief'
 import Strabag from './pages/Clients/components/Strabag/Strabag'
+import Lesson18 from './lessons/Lesson18/Lesson18'
 
 //Lessons imports
 // импорт компонента Lesson06 по умолчанию
@@ -72,6 +73,7 @@ function App() {
           <Route path='/clients/hochtief' element={<Hochtief />} />
           <Route path='/clients/strabag' element={<Strabag />} />
           <Route path='/clients/züblin' element={<Züblin />} />
+          <Route path='/lesson18' element={<Lesson18 />} />
         </Routes>
       </Layout>
     </BrowserRouter>
