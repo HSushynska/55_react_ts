@@ -14,6 +14,7 @@ import Züblin from './pages/Clients/components/Züblin/Züblin'
 import Hochtief from './pages/Clients/components/Hochtief/Hochtief'
 import Strabag from './pages/Clients/components/Strabag/Strabag'
 import Lesson18 from './lessons/Lesson18/Lesson18'
+import Homework18 from './homeworks/Homework18/Homework18'
 
 //Lessons imports
 // импорт компонента Lesson06 по умолчанию
@@ -74,6 +75,7 @@ function App() {
           <Route path='/clients/strabag' element={<Strabag />} />
           <Route path='/clients/züblin' element={<Züblin />} />
           <Route path='/lesson18' element={<Lesson18 />} />
+          <Route path='/homework18' element={<Homework18 />} />
         </Routes>
       </Layout>
     </BrowserRouter>
