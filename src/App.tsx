@@ -10,11 +10,11 @@ import Designer from './pages/Users/components/Designer/Designer'
 import Manager from './pages/Users/components/Manager/Manager'
 import PageNotFound from './pages/PageNotFound/PageNotFound'
 import Clients from './pages/Clients/Clients'
-import Züblin from './pages/Clients/components/Züblin/Züblin'
-import Hochtief from './pages/Clients/components/Hochtief/Hochtief'
-import Strabag from './pages/Clients/components/Strabag/Strabag'
 import Lesson18 from './lessons/Lesson18/Lesson18'
 import Homework18 from './homeworks/Homework18/Homework18'
+import Hochtief from './pages/Clients/components/Hochtief/Hochtief'
+import Strabag from './pages/Clients/components/Strabag/Strabag'
+import Züblin from './pages/Clients/components/Züblin/Züblin'
 
 //Lessons imports
 // импорт компонента Lesson06 по умолчанию
@@ -46,6 +46,8 @@ import Homework18 from './homeworks/Homework18/Homework18'
 //Consultations imports
 // import Consultation04 from "./consultations/Consultation04/Consultation04"
 // import Consultation05 from "./consultations/Consultation05/Consultation05"
+// import Consultation06 from './consultations/Consultation06/Consultation06'
+
 
 
 function App() {
@@ -66,16 +68,16 @@ function App() {
           <Route path='/users' element={<Users />} />
           <Route path='/users/designer' element={<Designer />} />
           <Route path='/users/manager' element={<Manager />} />
-          {/* path='*' - специальный маршрут, который вызовет переданный компонент в
-          том случае, если в маршрутах выше не будет найдено того маршрута,
-          к которому обращается пользователь */}
-          <Route path='*' element={<PageNotFound />} />
           <Route path='/clients' element={<Clients />} />
           <Route path='/clients/hochtief' element={<Hochtief />} />
           <Route path='/clients/strabag' element={<Strabag />} />
           <Route path='/clients/züblin' element={<Züblin />} />
           <Route path='/lesson18' element={<Lesson18 />} />
           <Route path='/homework18' element={<Homework18 />} />
+          {/* path='*' - специальный маршрут, который вызовет переданный компонент в
+          том случае, если в маршрутах выше не будет найдено того маршрута,
+          к которому обращается пользователь */}
+          <Route path='*' element={<PageNotFound />} />
         </Routes>
       </Layout>
     </BrowserRouter>

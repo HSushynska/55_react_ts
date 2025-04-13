@@ -14,4 +14,6 @@ export const Title = styled.div`
  font-size: 40px;
  font-weight: bold;
  color: #F54C51
+
 `
+

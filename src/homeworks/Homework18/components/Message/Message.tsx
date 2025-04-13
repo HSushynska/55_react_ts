@@ -1,11 +1,24 @@
-import { MessageTitle, MessageWrapper } from "./styles"
+import { useContext } from 'react';
 
-function Section() {
-    return (
-      <MessageWrapper>
-        <MessageTitle>Message</MessageTitle>
-      </MessageWrapper>
-    )
+import Button from '../../../../components/Button/Button';
+import { MessageContainer, MessageComponent } from './styles';
+import { BlogContext } from '../BlogManagement/BlogManagement';
+
+function Message() {
+  const { postedMessage, setPostedMessage } = useContext(BlogContext)
+
+  const deleteMessage = () => {
+    setPostedMessage('')
   }
-  
-  export default Section
+
+  return (
+    <MessageComponent>
+      <MessageContainer>{postedMessage}</MessageContainer>
+      <Button name='DELETE MESSAGE' onClick={deleteMessage} danger />
+    </MessageComponent>
+  );
+}
+
+export default Message;
+
+
