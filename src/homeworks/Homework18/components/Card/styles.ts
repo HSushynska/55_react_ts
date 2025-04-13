@@ -1,17 +1,16 @@
 import styled from "@emotion/styled";
 
-export const CardWrapper = styled.div`
+export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
-  width: 300px;
-  height: 300px;
   padding: 30px;
-  background: #71ABF1;
-`
+  gap: 20px;
+  min-width: 450px;
+  height: 300px;
+  background-color: #3bf5c0;
+`;
 
-export const CardTitle = styled.div`
-  font-size: 30px;
-  color: #324B69;
-`
+export const Name = styled.p`
+  font-size: 24px;
+`;

@@ -1,13 +1,14 @@
-import BlogManagement from "./components/BlogManagement/BlogManagement"
 
-import { Homework18Wrapper } from "./styles"
+import { Homework18Container } from './styles'
+
+import BlogManagement from './components/BlogManagement/BlogManagement';
 
 function Homework18() {
     return (
-      <Homework18Wrapper>
-        <BlogManagement />
-      </Homework18Wrapper>
+        <Homework18Container>
+            <BlogManagement />
+        </Homework18Container>
     )
-  }
-  
-  export default Homework18
+}
+
+export default Homework18;
